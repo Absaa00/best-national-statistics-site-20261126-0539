@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Population — Nusantara in Numbers</title>
+<meta name="description" content="Population of Indonesia: official-style national statistics with charts, tables and real figures.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">◈</span><div><strong>Nusantara in Numbers</strong><small>National statistics · Indonesia</small></div></div>
+  <nav><a href="index.html">Overview</a>
+      <a href="population.html" class="active" aria-current="page">Population</a>
+      <a href="economy.html">Economy</a>
+      <a href="health-education.html">Health & Education</a>
+      <a href="regions.html">Regions</a></nav>
+</header>
+<main>
+<h1>Population</h1>
+<p class="lede">281.6 million people in 2024, spread across 38 provinces and more than 17,000 islands. The median age is 30.3 years; 68.9% of people are of working age.</p>
+<div class="cards">
+  <div class="card"><h3>Age structure, 2024 (% of population)</h3><canvas id="ageChart" class="chart tall" aria-label="Age group bar chart"></canvas><p>The largest cohorts are 10–19 years old — a young, working-age nation.</p></div>
+  <div class="card"><h3>Population by province</h3><p>Java holds 55.9% of the population on 6.6% of the land.</p>
+  <div class="controls"><input type="search" id="provSearch" placeholder="Search a province…" aria-label="Search provinces"></div>
+  <p id="provCount">38 of 38 provinces shown</p></div>
+</div>
+<h2>All provinces — click a column header to sort</h2>
+<table class="sortable"><thead><tr><th>Province</th><th class="num">Population (millions)</th><th class="num">Area (km²)</th><th class="num">Density (/km²)</th></tr></thead>
+<tbody id="provBody"><tr><td>West Java</td><td class="num">49.90</td><td class="num">35,378</td><td class="num">1,410</td></tr>
+<tr><td>East Java</td><td class="num">41.80</td><td class="num">47,803</td><td class="num">874</td></tr>
+<tr><td>Central Java</td><td class="num">38.10</td><td class="num">32,801</td><td class="num">1,162</td></tr>
+<tr><td>North Sumatra</td><td class="num">15.90</td><td class="num">72,981</td><td class="num">218</td></tr>
+<tr><td>Banten</td><td class="num">12.40</td><td class="num">9,663</td><td class="num">1,283</td></tr>
+<tr><td>Jakarta</td><td class="num">10.60</td><td class="num">664</td><td class="num">15,964</td></tr>
+<tr><td>South Sulawesi</td><td class="num">9.20</td><td class="num">46,717</td><td class="num">197</td></tr>
+<tr><td>Lampung</td><td class="num">9.05</td><td class="num">34,624</td><td class="num">261</td></tr>
+<tr><td>South Sumatra</td><td class="num">9.05</td><td class="num">91,592</td><td class="num">99</td></tr>
+<tr><td>Riau</td><td class="num">6.65</td><td class="num">87,024</td><td class="num">76</td></tr>
+<tr><td>West Sumatra</td><td class="num">5.85</td><td class="num">42,013</td><td class="num">139</td></tr>
+<tr><td>West Kalimantan</td><td class="num">5.75</td><td class="num">147,307</td><td class="num">39</td></tr>
+<tr><td>East Nusa Tenggara</td><td class="num">5.60</td><td class="num">48,626</td><td class="num">115</td></tr>
+<tr><td>Aceh</td><td class="num">5.55</td><td class="num">57,957</td><td class="num">96</td></tr>
+<tr><td>West Nusa Tenggara</td><td class="num">5.55</td><td class="num">18,572</td><td class="num">299</td></tr>
+<tr><td>Bali</td><td class="num">4.40</td><td class="num">5,780</td><td class="num">761</td></tr>
+<tr><td>South Kalimantan</td><td class="num">4.20</td><td class="num">38,744</td><td class="num">108</td></tr>
+<tr><td>East Kalimantan</td><td class="num">3.90</td><td class="num">127,267</td><td class="num">31</td></tr>
+<tr><td>Jambi</td><td class="num">3.65</td><td class="num">50,059</td><td class="num">73</td></tr>
+<tr><td>Central Sulawesi</td><td class="num">3.05</td><td class="num">61,841</td><td class="num">49</td></tr>
+<tr><td>Central Kalimantan</td><td class="num">2.75</td><td class="num">153,565</td><td class="num">18</td></tr>
+<tr><td>Southeast Sulawesi</td><td class="num">2.75</td><td class="num">38,068</td><td class="num">72</td></tr>
+<tr><td>North Sulawesi</td><td class="num">2.70</td><td class="num">13,852</td><td class="num">195</td></tr>
+<tr><td>Riau Islands</td><td class="num">2.15</td><td class="num">8,201</td><td class="num">262</td></tr>
+<tr><td>Bengkulu</td><td class="num">2.05</td><td class="num">19,917</td><td class="num">103</td></tr>
+<tr><td>Maluku</td><td class="num">1.95</td><td class="num">46,914</td><td class="num">42</td></tr>
+<tr><td>Bangka Belitung</td><td class="num">1.55</td><td class="num">16,424</td><td class="num">94</td></tr>
+<tr><td>West Sulawesi</td><td class="num">1.55</td><td class="num">16,787</td><td class="num">92</td></tr>
+<tr><td>Central Papua</td><td class="num">1.35</td><td class="num">61,116</td><td class="num">22</td></tr>
+<tr><td>North Maluku</td><td class="num">1.35</td><td class="num">31,983</td><td class="num">42</td></tr>
+<tr><td>Gorontalo</td><td class="num">1.25</td><td class="num">11,257</td><td class="num">111</td></tr>
+<tr><td>Papua</td><td class="num">1.10</td><td class="num">82,952</td><td class="num">13</td></tr>
+<tr><td>North Kalimantan</td><td class="num">0.75</td><td class="num">70,131</td><td class="num">11</td></tr>
+<tr><td>Southwest Papua</td><td class="num">0.65</td><td class="num">39,167</td><td class="num">17</td></tr>
+<tr><td>West Papua</td><td class="num">0.60</td><td class="num">65,070</td><td class="num">9</td></tr>
+<tr><td>South Papua</td><td class="num">0.55</td><td class="num">131,381</td><td class="num">4</td></tr>
+<tr><td>Highland Papua</td><td class="num">1.45</td><td class="num">51,393</td><td class="num">28</td></tr>
+<tr><td>Yogyakarta</td><td class="num">3.80</td><td class="num">3,133</td><td class="num">1,213</td></tr></tbody></table>
+<p class="note">Density is population divided by land area. Jakarta is the densest province at about 16,000 people per km²; South Papua the sparsest at about 4 per km².</p>
+</main>
+<footer>
+  <p>Nusantara in Numbers · Indonesia · Data year 2024. Figures are rounded published estimates (Statistics Indonesia / BPS and ministry releases). Values are indicative for illustration of the site, not an official republication.</p>
+  <p><a href="index.html">Overview</a> · <a href="population.html">Population</a> · <a href="economy.html">Economy</a> · <a href="health-education.html">Health &amp; Education</a> · <a href="regions.html">Regions</a></p>
+</footer>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

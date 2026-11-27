@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy — Nusantara in Numbers</title>
+<meta name="description" content="Economy of Indonesia: official-style national statistics with charts, tables and real figures.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">◈</span><div><strong>Nusantara in Numbers</strong><small>National statistics · Indonesia</small></div></div>
+  <nav><a href="index.html">Overview</a>
+      <a href="population.html">Population</a>
+      <a href="economy.html" class="active" aria-current="page">Economy</a>
+      <a href="health-education.html">Health & Education</a>
+      <a href="regions.html">Regions</a></nav>
+</header>
+<main>
+<h1>Economy</h1>
+<p class="lede">GDP reached Rp 22,139 trillion in 2024 (about US$1.40 trillion), growing 5.03%. Manufacturing is the largest sector at 18.9% of GDP.</p>
+<div class="cards">
+  <div class="card"><h3>GDP by sector, 2024</h3><canvas id="sectorChart" class="chart" aria-label="GDP by sector bar chart"></canvas></div>
+  <div class="card"><h3>Inflation, year on year (%)</h3><canvas id="inflChart" class="chart" aria-label="Inflation line chart"></canvas><p>Inflation fell to 1.57% in 2024 after the 5.51% spike of 2022.</p></div>
+</div>
+<h2>Sector shares of GDP, 2024</h2>
+<div class="bar-row"><span>Manufacturing</span><div class="bar-track"><div class="bar-fill" style="width:83.16%"></div></div><b>18.9%</b></div>
+<div class="bar-row"><span>Wholesale & retail trade</span><div class="bar-track"><div class="bar-fill" style="width:57.2%"></div></div><b>13.0%</b></div>
+<div class="bar-row"><span>Agriculture, forestry & fishing</span><div class="bar-track"><div class="bar-fill" style="width:55.00000000000001%"></div></div><b>12.5%</b></div>
+<div class="bar-row"><span>Construction</span><div class="bar-track"><div class="bar-fill" style="width:43.56%"></div></div><b>9.9%</b></div>
+<div class="bar-row"><span>Mining & quarrying</span><div class="bar-track"><div class="bar-fill" style="width:36.96000000000001%"></div></div><b>8.4%</b></div>
+<div class="bar-row"><span>Transport & storage</span><div class="bar-track"><div class="bar-fill" style="width:25.52%"></div></div><b>5.8%</b></div>
+<div class="bar-row"><span>Information & communication</span><div class="bar-track"><div class="bar-fill" style="width:18.480000000000004%"></div></div><b>4.2%</b></div>
+<div class="bar-row"><span>Financial & insurance</span><div class="bar-track"><div class="bar-fill" style="width:18.04%"></div></div><b>4.1%</b></div>
+<div class="bar-row"><span>Public administration</span><div class="bar-track"><div class="bar-fill" style="width:15.840000000000002%"></div></div><b>3.6%</b></div>
+<div class="bar-row"><span>Real estate</span><div class="bar-track"><div class="bar-fill" style="width:11.880000000000003%"></div></div><b>2.7%</b></div>
+<div class="bar-row"><span>Other services</span><div class="bar-track"><div class="bar-fill" style="width:74.36%"></div></div><b>16.9%</b></div>
+<p class="note">Shares sum to 100% including "Other services". Manufacturing has been the largest sector every year since 2015.</p>
+<h2>Trade, 2024</h2>
+<table class="sortable"><thead><tr><th>Flow</th><th class="num">Value (US$ bn)</th><th>Main partners</th></tr></thead>
+<tbody>
+<tr><td>Exports</td><td class="num">264.7</td><td>China, United States, Japan</td></tr>
+<tr><td>Imports</td><td class="num">233.7</td><td>China, Singapore, Japan</td></tr>
+<tr><td>Trade balance</td><td class="num">+31.0</td><td>Surplus for the fifth straight year</td></tr>
+<tr><td>Foreign reserves</td><td class="num">155.7</td><td>About 6.5 months of imports</td></tr>
+</tbody></table>
+</main>
+<footer>
+  <p>Nusantara in Numbers · Indonesia · Data year 2024. Figures are rounded published estimates (Statistics Indonesia / BPS and ministry releases). Values are indicative for illustration of the site, not an official republication.</p>
+  <p><a href="index.html">Overview</a> · <a href="population.html">Population</a> · <a href="economy.html">Economy</a> · <a href="health-education.html">Health &amp; Education</a> · <a href="regions.html">Regions</a></p>
+</footer>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

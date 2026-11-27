@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health & Education — Nusantara in Numbers</title>
+<meta name="description" content="Health & Education of Indonesia: official-style national statistics with charts, tables and real figures.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">◈</span><div><strong>Nusantara in Numbers</strong><small>National statistics · Indonesia</small></div></div>
+  <nav><a href="index.html">Overview</a>
+      <a href="population.html">Population</a>
+      <a href="economy.html">Economy</a>
+      <a href="health-education.html" class="active" aria-current="page">Health & Education</a>
+      <a href="regions.html">Regions</a></nav>
+</header>
+<main>
+<h1>Health &amp; Education</h1>
+<p class="lede">Life expectancy reached 73.9 years in 2024. Literacy among people aged 15 and over is 96.5%, and mean years of schooling is 9.2 years.</p>
+<div class="tabs"><button class="on" data-tab="health">Health</button><button data-tab="edu">Education</button></div>
+<div data-panel="health">
+<div class="cards">
+  <div class="card"><h3>Life expectancy at birth (years)</h3><canvas id="lifeChart" class="chart" aria-label="Life expectancy line chart"></canvas><p>Up from 71.9 years in 2020 to 73.9 in 2024.</p></div>
+  <div class="card"><h3>Health system, 2024</h3><p>Hospitals: 3,168 · Community health centres (puskesmas): 10,416 · National health insurance (JKN) members: 271 million, about 96% of the population.</p><p>Infant mortality: 15.9 per 1,000 live births. Stunting among children under five: 19.8%.</p></div>
+</div></div>
+<div data-panel="edu" style="display:none">
+<div class="cards">
+  <div class="card"><h3>Schooling, 2024</h3><p>Mean years of schooling: 9.2 · Expected years: 13.2 · Adult literacy (15+): 96.5% · Net enrolment, primary: 97.8% · junior secondary: 81.4% · senior secondary: 65.9%.</p></div>
+  <div class="card"><h3>Students &amp; teachers</h3><p>About 53 million students from primary to senior secondary, taught by 3.4 million teachers. Higher education: 4,400 institutions, 9.3 million students.</p></div>
+</div></div>
+</main>
+<footer>
+  <p>Nusantara in Numbers · Indonesia · Data year 2024. Figures are rounded published estimates (Statistics Indonesia / BPS and ministry releases). Values are indicative for illustration of the site, not an official republication.</p>
+  <p><a href="index.html">Overview</a> · <a href="population.html">Population</a> · <a href="economy.html">Economy</a> · <a href="health-education.html">Health &amp; Education</a> · <a href="regions.html">Regions</a></p>
+</footer>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

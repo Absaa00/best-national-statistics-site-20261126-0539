@@ -1,0 +1,10 @@
+# local ignores for the r2 rebuild (27 Nov)
+node_modules
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.cache
+dist
+coverage
+screenshots/tmp-*.png

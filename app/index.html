@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overview — Nusantara in Numbers</title>
+<meta name="description" content="Overview of Indonesia: official-style national statistics with charts, tables and real figures.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">◈</span><div><strong>Nusantara in Numbers</strong><small>National statistics · Indonesia</small></div></div>
+  <nav><a href="index.html" class="active" aria-current="page">Overview</a>
+      <a href="population.html">Population</a>
+      <a href="economy.html">Economy</a>
+      <a href="health-education.html">Health & Education</a>
+      <a href="regions.html">Regions</a></nav>
+</header>
+<main>
+<h1>Indonesia in Numbers</h1>
+<p class="lede">The national statistics of Indonesia in one place: population, economy, health, education and regions — with real figures, working charts and tables you can sort, search and explore.</p>
+<div class="controls"><label>Data year <select id="yearSelect"><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024" selected>2024</option></select></label><span class="note">Switching the year updates the headline figures above.</span></div>
+<section class="kpis">
+  <div class="kpi"><span>Population</span><b id="kPop">281.6 jt</b><small>mid-year estimate</small></div>
+  <div class="kpi"><span>GDP</span><b id="kGdp">Rp 22,139 T</b><small>current prices</small></div>
+  <div class="kpi"><span>GDP growth</span><b id="kGrowth">5.03%</b><small>year on year</small></div>
+  <div class="kpi"><span>Life expectancy</span><b id="kLife">73.9 thn</b><small>at birth</small></div>
+  <div class="kpi"><span>Unemployment</span><b id="kUnemp">4.82%</b><small>open unemployment</small></div>
+  <div class="kpi"><span>Inflation</span><b id="kInfl">1.57%</b><small>year on year</small></div>
+</section>
+<div class="cards">
+  <div class="card"><h3>Population 2020–2024</h3><canvas id="popChart" class="chart" aria-label="Population line chart, millions"></canvas><p>Population rose from 270.2 to 281.6 million in four years.</p></div>
+  <div class="card"><h3>GDP growth (%)</h3><canvas id="growthChart" class="chart" aria-label="GDP growth line chart"></canvas><p>Growth stayed above 5% for three straight years after the 2020 contraction.</p></div>
+</div>
+<h2>Explore the statistics</h2>
+<div class="cards">
+  <div class="card"><h3>Population</h3><p>Age structure, growth and all 38 provinces with density.</p><a href="population.html">Open Population →</a></div>
+  <div class="card"><h3>Economy</h3><p>GDP by sector, trade, inflation and growth since 2020.</p><a href="economy.html">Open Economy →</a></div>
+  <div class="card"><h3>Health &amp; Education</h3><p>Life expectancy, literacy, schooling and health facilities.</p><a href="health-education.html">Open Health &amp; Education →</a></div>
+  <div class="card"><h3>Regions</h3><p>Compare every province: population, area and density.</p><a href="regions.html">Open Regions →</a></div>
+</div>
+<p class="note" style="margin-top:18px">Source: Statistics Indonesia (BPS) releases 2020–2024, rounded for this site. Figures are rounded published estimates (Statistics Indonesia / BPS and ministry releases). Values are indicative for illustration of the site, not an official republication.</p>
+</main>
+<footer>
+  <p>Nusantara in Numbers · Indonesia · Data year 2024. Figures are rounded published estimates (Statistics Indonesia / BPS and ministry releases). Values are indicative for illustration of the site, not an official republication.</p>
+  <p><a href="index.html">Overview</a> · <a href="population.html">Population</a> · <a href="economy.html">Economy</a> · <a href="health-education.html">Health &amp; Education</a> · <a href="regions.html">Regions</a></p>
+</footer>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
